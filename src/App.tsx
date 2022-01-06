@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BasicTable } from "./components/BasicTable";
+import { SortingTable } from "./components/SortingTable";
+import { FilteringTable } from "./components/FilteringTable";
+import { PaginationTable } from "./components/PaginationTable";
+import { RowSelectionTable } from "./components/RowSelection";
+import { ColumnOrderTable } from "./components/ColumnOrder";
+import { ColumnHidingTable } from "./components/ColumnHiding";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <BasicTable /> */}
+      {/* <SortingTable /> */}
+      {/* <FilteringTable /> */}
+      {/* <PaginationTable /> */}
+      {/* <RowSelectionTable /> */}
+      {/* <ColumnOrderTable /> */}
+      <ColumnHidingTable />
     </div>
   );
 }
